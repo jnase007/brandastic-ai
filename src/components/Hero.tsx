@@ -76,10 +76,9 @@ export default function Hero() {
           transition={{ duration: 0.9, ease, delay: 0.08 }}
           className="text-[2.6rem] leading-[1.04] sm:text-6xl lg:text-[4.6rem] font-serif text-cream mb-7"
         >
-          AI That Works for
+          AI That Actually Works
           <br />
-          Established Businesses
-          <span className="block text-teal-soft">— Without the Overwhelm</span>
+          for Established Businesses
         </motion.h1>
 
         <motion.p
@@ -88,9 +87,9 @@ export default function Hero() {
           transition={{ duration: 0.9, ease, delay: 0.16 }}
           className="max-w-2xl mx-auto text-lg sm:text-xl text-cream/75 leading-relaxed mb-10"
         >
-          The AI division of Brandastic. We design, implement, and manage custom AI agents for
-          $10M–$200M businesses — the same systems we used to build EquityMD and Comply.Capital. You
-          stay focused on your business; we handle the AI.
+          The AI division of Brandastic. We design, build, and run custom AI agents for proven
+          companies — the same systems behind EquityMD and Comply.Capital. You stay focused on the
+          business; we handle the AI.
         </motion.p>
 
         <motion.div

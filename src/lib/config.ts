@@ -1,7 +1,7 @@
 // Central place for tweakable settings.
 export const CALENDLY_URL =
   (import.meta.env.VITE_CALENDLY_URL as string | undefined) ||
-  'https://calendly.com/your-link/30min'; // ← replace with your real Calendly link
+  'https://calendar.app.google/xW96T5pJRHZpQYj99'; // Google Calendar appointment booking
 
 export const PITCH_VIDEO_URL =
   (import.meta.env.VITE_PITCH_VIDEO_URL as string | undefined) ||

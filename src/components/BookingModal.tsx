@@ -19,6 +19,9 @@ export default function BookingModal() {
   }, [open, closeBooking]);
 
   const isPlaceholder = CALENDLY_URL.includes('your-link');
+  // Google Calendar appointment links cannot be iframed (X-Frame-Options) — open in a new tab.
+  const isExternalOnly =
+    CALENDLY_URL.includes('calendar.app.google') || CALENDLY_URL.includes('calendar.google.com');
 
   return (
     <AnimatePresence>
@@ -64,7 +67,7 @@ export default function BookingModal() {
             {isPlaceholder ? (
               <div className="px-8 py-16 text-center">
                 <p className="text-ink/70 leading-relaxed max-w-md mx-auto">
-                  Add your Calendly link in <code className="text-teal-dark">.env</code> as{' '}
+                  Add your booking link in <code className="text-teal-dark">.env</code> as{' '}
                   <code className="text-teal-dark">VITE_CALENDLY_URL</code> and your live booking
                   calendar will appear here.
                 </p>
@@ -76,6 +79,23 @@ export default function BookingModal() {
                 >
                   Open booking link
                 </a>
+              </div>
+            ) : isExternalOnly ? (
+              <div className="px-8 py-14 sm:py-16 text-center">
+                <p className="text-ink/70 leading-relaxed max-w-md mx-auto">
+                  Pick a time that works for you on our calendar. We&rsquo;ll confirm by email and
+                  send a video link — no pitch, no pressure.
+                </p>
+                <a
+                  href={CALENDLY_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onClick={closeBooking}
+                  className="btn-primary mt-7 !px-8 !py-4"
+                >
+                  Open the booking calendar
+                </a>
+                <p className="mt-5 text-[12px] text-ink/45">Opens in a new tab.</p>
               </div>
             ) : (
               <iframe
