@@ -23,9 +23,7 @@ export default function Footer() {
 
           <div className="lg:justify-self-end">
             <div className="flex items-center gap-3">
-              <span className="grid place-items-center w-9 h-9 rounded-xl bg-cream text-navy font-serif text-lg">
-                L
-              </span>
+              <img src="/brand/mark.png" alt="Brandastic" className="w-9 h-9 rounded-xl" />
               <span className="font-serif text-xl text-cream">{BRAND.name}</span>
             </div>
             <p className="mt-4 text-cream/55 text-sm max-w-xs leading-relaxed">

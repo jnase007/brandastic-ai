@@ -18,7 +18,7 @@
     font-optical-sizing: auto;
   }
   ::selection {
-    @apply bg-teal/20 text-navy;
+    @apply bg-brand-light/25 text-navy;
   }
 }
 
@@ -31,7 +31,7 @@
   .btn-primary {
     @apply inline-flex items-center justify-center gap-2 bg-teal hover:bg-teal-dark text-white px-7 py-3.5
            rounded-full font-medium text-[15px] tracking-wide transition-all duration-300
-           shadow-[0_8px_24px_-8px_rgba(14,165,233,0.55)] hover:shadow-[0_12px_32px_-8px_rgba(14,165,233,0.65)]
+           shadow-[0_8px_24px_-8px_rgba(6,68,237,0.55)] hover:shadow-[0_12px_32px_-8px_rgba(6,68,237,0.65)]
            hover:-translate-y-0.5 active:translate-y-0;
   }
   .btn-navy {

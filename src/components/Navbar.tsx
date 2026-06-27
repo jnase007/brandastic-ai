@@ -36,14 +36,12 @@ export default function Navbar() {
     >
       <div className="container-luxe flex items-center justify-between">
         {/* Logo */}
-        <a href="#top" className="flex items-center gap-3 group">
-          <span
-            className={`grid place-items-center w-9 h-9 rounded-xl font-serif text-lg leading-none shadow-luxe transition-colors duration-500 ${
-              scrolled ? 'bg-navy text-cream' : 'bg-cream text-navy'
-            }`}
-          >
-            L
-          </span>
+        <a href="#top" className="flex items-center gap-2.5 group">
+          <img
+            src="/brand/mark.png"
+            alt="Brandastic"
+            className="w-9 h-9 rounded-xl shadow-luxe"
+          />
           <span
             className={`font-serif text-[19px] sm:text-[21px] tracking-tightest transition-colors duration-500 ${
               scrolled ? 'text-navy' : 'text-cream'

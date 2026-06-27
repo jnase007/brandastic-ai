@@ -4,19 +4,29 @@ export default {
   theme: {
     extend: {
       colors: {
+        // Official Brandastic brand palette
         navy: {
-          DEFAULT: '#0A2540',
-          light: '#13335A',
-          deep: '#071A2E',
+          DEFAULT: '#191F24', // Brandastic Black
+          light: '#2A3138',
+          deep: '#0F1316',
         },
         teal: {
-          DEFAULT: '#0EA5E9',
-          dark: '#0284C7',
-          soft: '#7DD3FC',
+          DEFAULT: '#0644ED', // Brandastic Deep Blue (primary accent)
+          dark: '#0436C2',
+          soft: '#40B4E5',    // Brandastic Light Blue
         },
-        cream: '#FBFAF8',
-        sand: '#F3F1EC',
-        ink: '#0F172A',
+        brand: {
+          deep: '#0644ED',
+          light: '#40B4E5',
+          violet: '#CC22FF',
+          black: '#191F24',
+        },
+        cream: '#F5F3EF',     // Coastal Fog
+        sand: '#EDEAE3',
+        ink: '#191F24',
+      },
+      backgroundImage: {
+        'brand-gradient': 'linear-gradient(120deg,#40B4E5 0%,#0644ED 60%,#CC22FF 130%)',
       },
       fontFamily: {
         serif: ['"Fraunces"', 'Georgia', 'serif'],
