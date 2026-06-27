@@ -2,7 +2,6 @@ import { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import { Menu, X } from 'lucide-react';
 import { useBooking } from '../context/BookingContext';
-import { BRAND } from '../lib/config';
 
 const links = [
   { label: 'Services', href: '#services' },
@@ -35,20 +34,15 @@ export default function Navbar() {
       }`}
     >
       <div className="container-luxe flex items-center justify-between">
-        {/* Logo */}
-        <a href="#top" className="flex items-center gap-2.5 group">
+        {/* Logo — official Brandastic wordmark (same as audit.brandastic.com) */}
+        <a href="#top" className="flex items-center group">
           <img
-            src="/brand/mark.png"
+            src="/brand/brandastic-wordmark-white.png"
             alt="Brandastic"
-            className="w-9 h-9 rounded-xl shadow-luxe"
-          />
-          <span
-            className={`font-serif text-[19px] sm:text-[21px] tracking-tightest transition-colors duration-500 ${
-              scrolled ? 'text-navy' : 'text-cream'
+            className={`h-[26px] sm:h-[28px] w-auto transition-all duration-500 ${
+              scrolled ? '[filter:brightness(0)] opacity-90' : 'opacity-100'
             }`}
-          >
-            {BRAND.name}
-          </span>
+          />
         </a>
 
         {/* Desktop links */}
