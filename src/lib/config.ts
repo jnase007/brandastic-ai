@@ -9,5 +9,5 @@ export const PITCH_VIDEO_URL =
 
 export const BRAND = {
   name: 'ai.brandastic.com',
-  email: 'hello@brandastic.ai',
+  email: 'info@brandastic.com',
 };
