@@ -7,6 +7,7 @@ import Services from './components/Services';
 import HowItWorks from './components/HowItWorks';
 import Pricing from './components/Pricing';
 import PitchVideo from './components/PitchVideo';
+import MarginEffect from './components/MarginEffect';
 import Results from './components/Results';
 import AuditCTA from './components/AuditCTA';
 import PreAuditForm from './components/PreAuditForm';
@@ -26,6 +27,7 @@ export default function App() {
         <Services />
         <HowItWorks />
         <Pricing />
+        <MarginEffect />
         <Results />
         <AuditCTA />
         <PreAuditForm />
