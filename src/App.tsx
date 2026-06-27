@@ -21,11 +21,11 @@ export default function App() {
       <main>
         <Hero />
         <TrustedBy />
+        <PitchVideo />
         <Challenge />
         <Services />
         <HowItWorks />
         <Pricing />
-        <PitchVideo />
         <Results />
         <AuditCTA />
         <PreAuditForm />
