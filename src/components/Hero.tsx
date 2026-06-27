@@ -1,5 +1,5 @@
 import { motion, AnimatePresence } from 'framer-motion';
-import { ArrowRight, Sparkles } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 import { useEffect, useState } from 'react';
 import { useBooking } from '../context/BookingContext';
 
@@ -58,18 +58,6 @@ export default function Hero() {
       <div className="pointer-events-none absolute bottom-0 right-0 w-[500px] h-[500px] rounded-full bg-teal/10 blur-[120px]" />
 
       <div className="container-luxe relative pt-40 pb-28 sm:pt-44 sm:pb-32 text-center">
-        <motion.div
-          initial={{ opacity: 0, y: 14 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7, ease }}
-          className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/[0.07] border border-white/10 backdrop-blur-sm mb-8"
-        >
-          <Sparkles className="w-3.5 h-3.5 text-teal-soft" />
-          <span className="text-[12px] tracking-[0.18em] uppercase text-cream/70">
-            Built by operators, for operators
-          </span>
-        </motion.div>
-
         <motion.h1
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
