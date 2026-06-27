@@ -1,14 +1,14 @@
 // "Brands who trust us with their story" — matches audit.brandastic.com styling
 // Light cream background, muted gray logos, smooth marquee.
 const logos = [
-  { name: 'Orangetheory', url: 'https://brandastic.com/wp-content/uploads/2026/05/Orangetheory-Fitness-Logo-1.svg', h: 56 },
-  { name: 'HyperX', url: 'https://brandastic.com/wp-content/uploads/2026/05/hyperx-logo.svg', h: 22 },
-  { name: 'Fujifilm', url: 'https://brandastic.com/wp-content/uploads/2026/05/fujifilm-seeklogo.svg', h: 40 },
-  { name: 'Pocky', url: 'https://brandastic.com/wp-content/uploads/2026/05/Pocky-Logo-1.svg', h: 44 },
-  { name: 'KIA', url: 'https://brandastic.com/wp-content/uploads/2026/05/Kia-Logo-1.svg', h: 36 },
-  { name: 'RICOH', url: 'https://brandastic.com/wp-content/uploads/2026/05/ricoh-logo.svg', h: 40 },
-  { name: 'USC', url: 'https://brandastic.com/wp-content/uploads/2026/05/usc-logo.svg', h: 44 },
-  { name: 'UFC Gym', url: 'https://brandastic.com/wp-content/uploads/2026/05/ufc-gym-logo.svg', h: 22 },
+  { name: 'Orangetheory', url: 'https://brandastic.com/wp-content/uploads/2026/05/Orangetheory-Fitness-Logo-1.svg', h: 112 },
+  { name: 'HyperX', url: 'https://brandastic.com/wp-content/uploads/2026/05/hyperx-logo.svg', h: 44 },
+  { name: 'Fujifilm', url: 'https://brandastic.com/wp-content/uploads/2026/05/fujifilm-seeklogo.svg', h: 80 },
+  { name: 'Pocky', url: 'https://brandastic.com/wp-content/uploads/2026/05/Pocky-Logo-1.svg', h: 88 },
+  { name: 'KIA', url: 'https://brandastic.com/wp-content/uploads/2026/05/Kia-Logo-1.svg', h: 72 },
+  { name: 'RICOH', url: 'https://brandastic.com/wp-content/uploads/2026/05/ricoh-logo.svg', h: 80 },
+  { name: 'USC', url: 'https://brandastic.com/wp-content/uploads/2026/05/usc-logo.svg', h: 88 },
+  { name: 'UFC Gym', url: 'https://brandastic.com/wp-content/uploads/2026/05/ufc-gym-logo.svg', h: 44 },
 ];
 
 export default function TrustedBy() {
