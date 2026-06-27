@@ -1,6 +1,6 @@
-# Meridian AI Partners
+# Brandastic.ai
 
-A premium, conversion-focused landing site for **Meridian AI Partners** — AI implementation & management for established $10M–$200M businesses. Built to feel luxurious, calm, and instantly trustworthy, with the **Free 30-Minute AI Opportunity Audit** as the hero action.
+A premium, conversion-focused landing site for **Brandastic.ai** — AI implementation & management for established $10M–$200M businesses. Built to feel luxurious, calm, and instantly trustworthy, with the **Free 30-Minute AI Opportunity Audit** as the hero action.
 
 **Stack:** Vite · React · TypeScript · Tailwind CSS · Framer Motion · Supabase · lucide-react
 

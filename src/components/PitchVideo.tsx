@@ -20,7 +20,7 @@ export default function PitchVideo() {
               {PITCH_VIDEO_URL ? (
                 <iframe
                   src={PITCH_VIDEO_URL}
-                  title="Meridian AI Partners pitch"
+                  title="Brandastic.ai pitch"
                   className="absolute inset-0 w-full h-full"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowFullScreen

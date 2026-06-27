@@ -25,7 +25,7 @@ export interface LeadPayload {
 export async function submitLead(payload: LeadPayload): Promise<{ ok: boolean; error?: string }> {
   if (!supabase) {
     // Dev fallback: log so the flow is testable before Supabase is wired.
-    console.info('[Meridian AI] Lead (Supabase not configured):', payload);
+    console.info('[Brandastic.ai] Lead (Supabase not configured):', payload);
     return { ok: true };
   }
   const { error } = await supabase.from('leads').insert([payload]);

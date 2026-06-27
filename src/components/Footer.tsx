@@ -30,7 +30,7 @@ export default function Footer() {
             </div>
             <p className="mt-4 text-cream/55 text-sm max-w-xs leading-relaxed">
               AI implementation & management for established $10M–$200M businesses. Built by
-              operators behind EquityMD, Comply.Capital, and Brandastic.
+              the AI division of Brandastic, behind EquityMD and Comply.Capital.
             </p>
             <a
               href={`mailto:${BRAND.email}`}

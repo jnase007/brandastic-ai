@@ -44,9 +44,9 @@ export default function Hero() {
           transition={{ duration: 0.9, ease, delay: 0.16 }}
           className="max-w-2xl mx-auto text-lg sm:text-xl text-cream/75 leading-relaxed mb-10"
         >
-          We design, implement, and manage custom AI agents for $10M–$200M businesses — the same
-          systems we used to build EquityMD, Comply.Capital, and Brandastic. You stay focused on
-          your business; we handle the AI.
+          The AI division of Brandastic. We design, implement, and manage custom AI agents for
+          $10M–$200M businesses — the same systems we used to build EquityMD and Comply.Capital. You
+          stay focused on your business; we handle the AI.
         </motion.p>
 
         <motion.div

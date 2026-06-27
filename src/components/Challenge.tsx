@@ -35,14 +35,14 @@ export default function Challenge() {
                 with it.”
               </p>
               <p className="mt-5 text-ink/70 leading-relaxed">
-                I used AI agents and automation to build <strong className="text-navy">EquityMD</strong> (a
-                real-estate investment platform), <strong className="text-navy">Comply.Capital</strong> (AI
-                compliance for construction lending), and to run{' '}
-                <strong className="text-navy">Brandastic</strong>, a full-service marketing agency.
+                We used AI agents and automation to build <strong className="text-navy">EquityMD</strong> (a
+                real-estate investment platform) and <strong className="text-navy">Comply.Capital</strong> (AI
+                compliance for construction lending) — all while running{' '}
+                <strong className="text-navy">Brandastic</strong>, our full-service marketing agency.
               </p>
               <p className="mt-4 text-ink/70 leading-relaxed">
-                Meridian AI Partners is how I bring those exact playbooks to other established business
-                owners — calmly, and without the overwhelm.
+                <strong className="text-navy">Brandastic.ai</strong> is how we bring those exact playbooks to
+                other established business owners — calmly, and without the overwhelm.
               </p>
             </div>
           </Reveal>
