@@ -8,7 +8,8 @@ const results = [
     body: 'A full investor-to-syndicator marketplace built and scaled with AI — from SEO and content engines to automated deal workflows.',
     metric: '7,400+',
     metricLabel: 'accredited investors reached',
-    image: 'https://brandastic.com/wp-content/uploads/2026/06/shutterstock_759538516.jpg',
+    image:
+      'https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=900&q=80&auto=format&fit=crop',
     imageAlt: 'Multifamily residential building',
   },
   {
@@ -17,8 +18,9 @@ const results = [
     body: 'An AI-driven document & draw-management platform for construction lending — extraction, review, and compliance automated end-to-end.',
     metric: '$1B+',
     metricLabel: 'in loan volume supported',
-    image: 'https://brandastic.com/wp-content/uploads/2026/06/shutterstock_2251938325.jpg',
-    imageAlt: 'Construction compliance advisory',
+    image:
+      'https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=900&q=80&auto=format&fit=crop',
+    imageAlt: 'Building under construction',
   },
   {
     name: 'Brandastic',
