@@ -8,6 +8,6 @@ export const PITCH_VIDEO_URL =
   'https://www.youtube.com/embed/cn8Gv23JOIQ';
 
 export const BRAND = {
-  name: 'Brandastic.ai',
+  name: 'ai.brandastic.com',
   email: 'hello@brandastic.ai',
 };

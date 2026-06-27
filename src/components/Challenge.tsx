@@ -41,7 +41,7 @@ export default function Challenge() {
                 <strong className="text-navy">Brandastic</strong>, our full-service marketing agency.
               </p>
               <p className="mt-4 text-ink/70 leading-relaxed">
-                <strong className="text-navy">Brandastic.ai</strong> is how we bring those exact playbooks to
+                <strong className="text-navy">ai.brandastic.com</strong> is how we bring those exact playbooks to
                 other established business owners — calmly, and without the overwhelm.
               </p>
             </div>
