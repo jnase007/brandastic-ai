@@ -13,9 +13,18 @@ const heroPhotos = [
   'https://brandastic.com/wp-content/uploads/2026/05/DSC02965.jpg',
 ];
 
+// Rotating hero taglines (two lines each)
+const heroTaglines: [string, string][] = [
+  ['AI That Actually Works', 'for Established Businesses'],
+  ['AI Agents That Execute', 'While Humans Strategize'],
+  ['The Human + AI Squad Model:', 'Autonomous Marketing at Scale'],
+  ['Not Just AI Tools —', 'Autonomous AI Marketing Teams'],
+];
+
 export default function Hero() {
   const { openBooking } = useBooking();
   const [active, setActive] = useState(0);
+  const [tagline, setTagline] = useState(0);
 
   // Preload images so cross-fades are smooth
   useEffect(() => {
@@ -25,11 +34,19 @@ export default function Hero() {
     });
   }, []);
 
-  // Rotate every 6 seconds
+  // Rotate background photos every 6 seconds
   useEffect(() => {
     const id = setInterval(() => {
       setActive((i) => (i + 1) % heroPhotos.length);
     }, 6000);
+    return () => clearInterval(id);
+  }, []);
+
+  // Rotate headline taglines every 4 seconds
+  useEffect(() => {
+    const id = setInterval(() => {
+      setTagline((i) => (i + 1) % heroTaglines.length);
+    }, 4000);
     return () => clearInterval(id);
   }, []);
 
@@ -58,16 +75,22 @@ export default function Hero() {
       <div className="pointer-events-none absolute bottom-0 right-0 w-[500px] h-[500px] rounded-full bg-teal/10 blur-[120px]" />
 
       <div className="container-luxe relative pt-40 pb-28 sm:pt-44 sm:pb-32 text-center">
-        <motion.h1
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.9, ease, delay: 0.08 }}
-          className="text-[2.6rem] leading-[1.04] sm:text-6xl lg:text-[4.6rem] font-serif text-cream mb-7"
-        >
-          AI That Actually Works
-          <br />
-          for Established Businesses
-        </motion.h1>
+        <h1 className="text-[2.6rem] leading-[1.04] sm:text-6xl lg:text-[4.6rem] font-serif text-cream mb-7 min-h-[2.2em] flex items-center justify-center">
+          <AnimatePresence mode="wait">
+            <motion.span
+              key={tagline}
+              initial={{ opacity: 0, y: 18 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -18 }}
+              transition={{ duration: 0.7, ease }}
+              className="block"
+            >
+              {heroTaglines[tagline][0]}
+              <br />
+              {heroTaglines[tagline][1]}
+            </motion.span>
+          </AnimatePresence>
+        </h1>
 
         <motion.p
           initial={{ opacity: 0, y: 18 }}
